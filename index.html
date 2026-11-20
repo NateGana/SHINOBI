@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>SHINOBI: NATE'S DOMAIN</title>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div id="menu" class="screen">
+  <h1>SHINOBI<span>NATE'S DOMAIN</span></h1>
+  <p class="tag">"Every Shinobi Has a Path. Every Legend Has a Final Enemy."</p>
+  <p class="story">For generations, shinobi have trained to master their skills. But beyond the known regions, one warrior controls the Shadow Realm. His name is Nate. No challenger has ever matched his power. Your journey begins now.</p>
+  <div id="stats"></div>
+  <div class="btns">
+    <button data-mode="training">TRAINING DOJO</button>
+    <button data-mode="survival">SURVIVAL MODE</button>
+    <button data-mode="boss" id="bossBtn">BOSS: NATE</button>
+  </div>
+  <div class="btns" id="shop"></div>
+  <p class="help"><b>WASD/Arrows</b> move · <b>Mouse</b> aim · <b>Click/Space</b> shuriken · <b>Shift</b> dash · <b>Q</b> Wind Shuriken · <b>E</b> Triple Throw · <b>R</b> Shadow Storm · <b>Esc</b> pause</p>
+  <button id="resetBtn" class="small">Reset Progress</button>
+</div>
+<div id="game" class="hidden">
+  <canvas id="cv" width="960" height="540"></canvas>
+  <div id="hud">
+    <div class="bar"><i id="hp"></i></div><div class="bar en"><i id="en"></i></div>
+    <div id="lvl"></div><div id="cds"></div><div id="info"></div>
+    <button id="pauseBtn">❚❚</button>
+  </div>
+  <div id="boss" class="hidden"><b>NATE — THE SHADOW EMPEROR</b> <span id="phase"></span><div class="bar big"><i id="bhp"></i></div></div>
+  <div id="banner" class="hidden"></div>
+  <div id="joy"><div id="knob"></div></div>
+  <div id="tbtns"><button data-act="shoot">✦</button><button data-act="dash">»</button><button data-act="q">Q</button><button data-act="e">E</button><button data-act="r">R</button></div>
+  <div id="over" class="hidden"><h2 id="overT"></h2><p id="overP"></p><div class="btns"><button id="retry">RETRY</button><button id="toMenu">MAIN MENU</button></div></div>
+  <div id="pause" class="hidden"><h2>PAUSED</h2><div class="btns"><button id="resume">RESUME</button><button id="toMenu2">MAIN MENU</button></div></div>
+</div>
+<script src="js/utils.js" defer></script>
+<script src="js/storage.js" defer></script>
+<script src="js/game-engine.js" defer></script>
+<script src="js/boss-nate.js" defer></script>
+<script src="js/app.js" defer></script>
+</body></html>
