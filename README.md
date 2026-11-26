@@ -1,7 +1,7 @@
 # SHINOBI: NATE'S DOMAIN
  2D ninja action game.
 
-Try it here: 
+Try it here: https://nategana.github.io/SHINOBI/
 
 ## Controls
 WASD/Arrows move · Mouse aim · Click/Space shuriken · Shift dash · Q Wind Shuriken (20 energy, piercing) · E Triple Throw (15) · R Shadow Storm (60) · Esc pause.
